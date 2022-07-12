@@ -1,0 +1,14 @@
+
+title: OonDev
+email: leos.developer@gmail.com
+description: Portifolio Pessoal com Projetos.
+author: Lucas Eduardo de Oliveira Santos
+github_username: LucasSantus
+url: https://lucassantus.github.io/portfolio/
+baseurl: "/"
+permalink: /:title
+favicon: "./logo.png"
+remote_theme: abhinavs/moonwalk
+plugins:
+  - jekyll-feed
+  - jekyll-soopr-seo-tag
