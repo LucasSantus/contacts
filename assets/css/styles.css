@@ -1,0 +1,179 @@
+body{
+    --bg: white;
+    --color-text: #1F000B;
+    --color-primary: #D6336C;
+    --color-secondary: #A61E4D;
+
+    background: var(--bg);
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* DISPLAY'S */
+.d-flex{
+    display: flex;
+}
+
+/* JUSTIFY'S */
+.justify-content-end{
+    justify-content: end;
+}
+
+/* TEXT-DECORATION */
+.text-decoration-none{
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    padding: 3rem;
+    margin: 60px auto;
+    background: var(--color-secondary);
+}
+
+/* MEDIA QUERY */
+
+@media (min-width: 250px) and (max-width: 400px){
+    .container{
+        width: 80%;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 600px){
+    .container{
+        width: 300px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px){
+    .container{
+        width: 300px;
+    }
+}
+
+.w-100 {
+    width: 100%; 
+}
+
+/* PADDING */
+.p-3{padding:1rem!important}
+
+img{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    padding: .3rem;
+    border: var(--color-secondary) solid 4px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.username {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+
+
+
+
+
+/*  */
+
+ul {
+    list-style: none;
+    margin: 48px 0;
+}
+
+ul li a {
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-primary); /* hex: 0 - F */
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    /* transition: background 400ms; */
+}
+
+/* pseudo-class */
+/* ul li a:hover {
+    background: var(--color-primary-dark);
+} */
+
+footer {
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 0.6;
+    transition: opacity 400ms;
+}
+
+footer:hover {
+    opacity: 1;
+}
+
+/* footer a{
+    color: var(--text-color);
+} */
+
+
+/* CHECKBOX */
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 27px;
+    background: grey;
+    float: right;
+    border-radius: 100px;
+    position: relative;
+}
+
+label::after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input:checked + label {
+    background-color: var(--color-text);
+}
+
+input:checked + label::after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 45px;
+}

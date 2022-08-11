@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- URL Project -->
-    <link rel="canonical" href="https://lucassantus.github.io/portfolio/"/>
+        <!-- URL Project -->
+        <link rel="canonical" href=""/>
 
-    <!-- Description Project -->
-    <meta name="author" content="Lucas Eduardo de Oliveira Santos">
-    <meta name="description" content="Site construído para manter futuras postagens de projetos pessoais.">
+        <!-- Description Project -->
+        <meta name="author" content="Lucas Eduardo de Oliveira Santos">
+        <meta name="description" content="Sistema básico mantenedor de links pessoais.">
 
-    <!-- Import Favicon -->
-    <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon">
+        <!-- Import Favicon -->
+        <!-- <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon"> -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css" />
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> -->
 
-    <title>PersonalLINKS</title>
-</head>
-  <body class="pink">  
-    <div class="container">
-      <img class="avatar" src="https://github.com/LucasSantus.png" alt="Imagem do Lucas Santos" />
-      <h1>Lucas Santos</h1>
-      <p class="username">@lucassantus</p>
+        <link rel="stylesheet" href="./assets/css/styles.css" />
 
-      <ul>
-        <li><a href="https://lucassantus.github.io/portfolio/" target="_blank">👩‍💻 Portifólio</a></li>
-        <li><a href="https://www.linkedin.com/in/lucas-santus/" target="_blank">📹 Linkedin</a></li>
-        <li><a href="https://github.com/LucasSantus" target="_blank">🐱 Github</a></li>
-      </ul>
+        <title>Lucas Santos - Contacts</title>
+        <style>
 
-      <footer>Feito com 💜 por
-        <a href="https://rocketseat.com.br" target="_blank">LucasSantus</a>
-      </footer>
-    </div>
-  </body>
+        </style>
+    </head>
+
+    <body>
+        <div class="d-flex justify-content-end p-3">
+            <input id="switch" type="checkbox" name="theme">
+            <label for="switch">Toggle</label>
+        </div>
+
+        <div class="container">
+            <img src="https://github.com/LucasSantus.png" alt="Imagem do Lucas Santos" />
+
+            <h1>Lucas Santos</h1>
+            <p class="username">@lucassantus</p>
+
+            <ul>
+                <li><a href="https://lucassantus.github.io/portfolio/" target="_blank">👩‍💻 Portifólio</a></li>
+                <li><a href="https://www.linkedin.com/in/lucas-santus/" target="_blank">📹 Linkedin</a></li>
+                <li><a href="https://github.com/LucasSantus" target="_blank">🐱 Github</a></li>
+            </ul>
+
+            <footer>Feito com 💜 por
+                <a href="https://rocketseat.com.br" class="text-decoration-none" target="_blank">LucasSantus</a>
+            </footer>
+        </div>
+
+        <!-- SCRIPTS JS -->
+        <script src="./assets/js/scripts.js"></script>
+    </body>
 </html>
