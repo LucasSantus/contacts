@@ -1,11 +1,16 @@
 body{
     --bg: white;
     --color-text: #1F000B;
-    --color-primary: blue;
-    --color-secondary: rgb(243, 243, 243);
+    --color-primary: #01579b;
+    --color-secondary: #eeeeee;
 
     background: var(--bg);
     font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 * {
@@ -14,18 +19,14 @@ body{
     box-sizing: border-box;
 }
 
-.toggle {
-    display: flex;
-    justify-content: end;
-    padding: .75rem;
-}
-
+/* CARDS */
 .card {
     border-radius: 15px;
     width: 500px;
-    padding: 3rem;
-    margin: 60px auto;
+    padding: 2rem;
+    margin: 40px 0 0 0;
     background: var(--color-secondary);
+    transition: width 400ms;
 }
 
 .card-header,
@@ -36,6 +37,7 @@ body{
     align-items: center;
 }
 
+/* IMAGES */
 .image {
     border-radius: 30%;
     width: 150px;
@@ -43,6 +45,7 @@ body{
     border: var(--color-primary) solid 4px;
 }
 
+/* DESCRIPTIONS */
 .name {
     font-size: 32px;
     margin-top: 24px;
@@ -59,6 +62,7 @@ body{
 
 }
 
+/* LIST */
 .list-links {
     list-style: none;
     margin: 48px 0;
@@ -67,6 +71,9 @@ body{
 .list-item {
     height: 53px;
     display: flex;
+    flex-direction: row;
+    min-width: 100px;
+    gap: 5px;
     align-items: center;
     justify-content: center;
     background: var(--color-primary);
@@ -76,14 +83,16 @@ body{
     margin-bottom: 16px;
     border-radius: 15px;
     text-decoration: none;
-    transition: opacity 300ms;
+    transition: opacity 400ms;
 }
 
 .list-item:hover {
     opacity: .4;
 }
 
+/* FOOTER */
 footer {
+    text-align: center;
     font-weight: 500;
     font-size: 12px;
     opacity: 0.6;
@@ -94,23 +103,16 @@ footer:hover {
     opacity: 1;
 }
 
-/* MEDIA QUERY */
-@media (min-width: 250px) and (max-width: 400px){
-    .container{
-        width: 80%;
-    }
+footer a {
+    color: var(--color-text);
 }
 
-@media (min-width: 401px) and (max-width: 600px){
-    .container{
-        width: 300px;
-    }
-}
-
-@media (min-width: 601px) and (max-width: 900px){
-    .container{
-        width: 300px;
-    }
+/* CHECKBOX */
+.toggle{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin: 0 0 25px 0;
 }
 
 #checkbox {
@@ -128,7 +130,7 @@ footer:hover {
 }
 
 #checkbox:checked {
-    background: var(--color-secondary);
+    background: var(--color-primary);
 }
 
 #checkbox::before,
@@ -160,4 +162,47 @@ footer:hover {
 #checkbox:checked::after {
     top: 1px;
     right: 15px;
+}
+
+/* MEDIA QUERY */
+@media (min-width: 100px){
+    .list-item {
+        display: flex;
+        flex-direction: column;
+        height: 70px;
+    }
+    .image {
+        width: 100px;
+        height: 100px;
+    }
+    .card{
+        width: 100%;
+        border-radius: 0px;
+        margin: 0;
+        height: 100vh;
+    }
+}
+
+@media (min-width: 500px){
+    .list-item {
+        display: flex;
+        flex-direction: row !important;
+        height: 53px;
+    }
+    .image {
+        width: 150px;
+        height: 150px;
+    }
+    .card{
+        width: 400px;
+        margin: 40px;
+        height: auto;
+        border-radius: 15px;
+    }
+}
+
+@media (min-width: 700px){
+    .card{
+        width: 500px;
+    }
 }
