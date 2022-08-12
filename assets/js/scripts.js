@@ -1,26 +1,3 @@
-// let items = [
-//     "dark-mode",
-//     "blue-mode",
-//     "green-mode",
-//     "light-mode",
-// ]
-
-// function next_mode() {
-//     let body = document.getElementById("body").classList
-//     let theme = localStorage.getItem("theme");
-//     for(let item of items){
-//         console.log(item)
-//         if(body.contains(item)){
-//             let position = items.findIndex(element => element === item);
-//             body.remove(item)
-//             console.log(items.length  - 1)
-//             console.log(position)
-//             (items.length - 1) === position ? body.add(items[0]) : body.add(items[position+1])
-//             break;
-//         }
-//     }
-// }
-
 const body = document.querySelector("body")
 const checkbox = document.querySelector("input[name=theme]")
 
