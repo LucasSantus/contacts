@@ -1,8 +1,7 @@
 body{
     --bg: white;
     --color-text: #1F000B;
-    --color-primary: #D6336C;
-    --color-secondary: #A61E4D;
+    --color-primary: blue;
 
     background: var(--bg);
     font-family: 'Roboto', sans-serif;
@@ -14,34 +13,84 @@ body{
     box-sizing: border-box;
 }
 
-/* DISPLAY'S */
-.d-flex{
+.toggle {
     display: flex;
-}
-
-/* JUSTIFY'S */
-.justify-content-end{
     justify-content: end;
+    padding: .75rem;
 }
 
-/* TEXT-DECORATION */
-.text-decoration-none{
-    text-decoration: none;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.card {
+    border-radius: 15px;
     width: 500px;
     padding: 3rem;
     margin: 60px auto;
     background: var(--color-secondary);
 }
 
-/* MEDIA QUERY */
+.card-header,
+.card-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.image {
+    border-radius: 30%;
+    width: 150px;
+    height: 150px;
+    border: var(--color-primary) solid 4px;
+}
+
+.name {
+    font-size: 32px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.username {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+.list-links {
+    list-style: none;
+    margin: 48px 0;
+}
+
+.list-item {
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-primary);
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 16px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: opacity 300ms;
+}
+
+.list-item:hover {
+    opacity: .4;
+}
+
+footer {
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 0.6;
+    transition: opacity 400ms;
+}
+
+footer:hover {
+    opacity: 1;
+}
+
+/* MEDIA QUERY */
 @media (min-width: 250px) and (max-width: 400px){
     .container{
         width: 80%;
@@ -60,120 +109,51 @@ body{
     }
 }
 
-.w-100 {
-    width: 100%; 
-}
-
-/* PADDING */
-.p-3{padding:1rem!important}
-
-img{
-    border-radius: 100%;
-    width: 150px;
-    height: 150px;
-    padding: .3rem;
-    border: var(--color-secondary) solid 4px;
-}
-
-h1 {
-    font-size: 32px;
-    margin-top: 24px;
-    margin-bottom: 8px;
-}
-
-.username {
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 400;
-    opacity: 0.8;
-    font-size: 18px;
-}
-
-
-
-
-
-
-/*  */
-
-ul {
-    list-style: none;
-    margin: 48px 0;
-}
-
-ul li a {
-    height: 53px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--color-primary); /* hex: 0 - F */
-    color: white;
-    text-transform: uppercase;
-    font-size: 14px;
-    margin-bottom: 16px;
-    border-radius: 6px;
-    /* transition: background 400ms; */
-}
-
-/* pseudo-class */
-/* ul li a:hover {
-    background: var(--color-primary-dark);
-} */
-
-footer {
-    font-weight: 500;
-    font-size: 12px;
-    opacity: 0.6;
-    transition: opacity 400ms;
-}
-
-footer:hover {
-    opacity: 1;
-}
-
-/* footer a{
-    color: var(--text-color);
-} */
-
-
-/* CHECKBOX */
-input[type=checkbox]{
-    height: 0;
-    width: 0;
-    visibility: hidden;
-}
-
-label {
-    cursor: pointer;
-    text-indent: -9999px;
-    width: 52px;
-    height: 27px;
-    background: grey;
-    float: right;
-    border-radius: 100px;
+#checkbox {
     position: relative;
+    appearance: none;
+    outline: none;
+    width: 65px;
+    height: 35px;
+    border-radius: 20px;
+    box-shadow: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    background: #c3c3c3;
 }
 
-label::after{
+#checkbox:checked {
+    background: var(--color-secondary);
+}
+
+#checkbox::before,
+#checkbox::after{
     content: '';
     position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    border-radius: 90px;
-    transition: 0.3s;
+    border-radius: inherit;
+    width: 40%;
+    height: 75%;
+    transition: inherit;
 }
 
-input:checked + label {
-    background-color: var(--color-text);
+#checkbox::before {
+    top: 4px;
+    left: 4px;
+    background: #ffff00;
 }
 
-input:checked + label::after {
-    left: calc(100% - 5px);
-    transform: translateX(-100%);
+#checkbox::after {
+    top: -6px;
+    right: calc(100% + 36px);
 }
 
-label:active:after {
-    width: 45px;
+#checkbox:checked::before {
+    left: calc(100% - 30px);
+    background: #cccccc;
+}
+
+#checkbox:checked::after {
+    top: 1px;
+    right: 15px;
 }
