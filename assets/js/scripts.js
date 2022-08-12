@@ -39,7 +39,7 @@ const dark_mode = {
     bg: "#202124",
     colorPrimary: "#333333",
     colorSecondary: "#434343",
-    colorText: "#bdc1c6"
+    colorText: "white"
 }
 
 const transformKey = key => "--" + key.replace(/([A-Z])/g, "-$1").toLowerCase()
