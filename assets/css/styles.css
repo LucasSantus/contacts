@@ -2,6 +2,7 @@ body{
     --bg: white;
     --color-text: #1F000B;
     --color-primary: blue;
+    --color-secondary: rgb(243, 243, 243);
 
     background: var(--bg);
     font-family: 'Roboto', sans-serif;
@@ -46,6 +47,7 @@ body{
     font-size: 32px;
     margin-top: 24px;
     margin-bottom: 8px;
+    color: var(--color-text);
 }
 
 .username {
@@ -53,6 +55,8 @@ body{
     font-weight: 400;
     opacity: 0.8;
     font-size: 18px;
+    color: var(--color-text);
+
 }
 
 .list-links {
