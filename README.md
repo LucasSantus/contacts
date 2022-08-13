@@ -37,4 +37,4 @@ Obrigado por visitar e boa codificação!<br />
 
 <h3 id="license">:memo: License</h3>
 
-Este projeto está licenciado sob a Licença MIT License - veja o [LICENSE.md](https://github.com/LucasSantus/django-qrcode-generator/blob/master/LICENSE) para melhores detalhes.
+Este projeto está licenciado sob a Licença GNU GENERAL PUBLIC LICENSE - veja o [LICENSE.md](https://github.com/LucasSantus/contact-me/blob/master/LICENSE) para melhores detalhes.
