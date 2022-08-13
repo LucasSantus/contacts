@@ -23,7 +23,7 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/styles.min.css" />
 
         <title>Contacts</title>
 
@@ -75,6 +75,11 @@
         </div>
 
         <!-- SCRIPTS JS -->
-        <script src="./assets/js/scripts.js"></script>
+        <script src="./assets/js/scripts.min.js"></script>
+
+        <!-- disabled Context Menu on pages -->
+        <script>
+            document.addEventListener('contextmenu', event => event.preventDefault());
+        </script>
     </body>
 </html>
