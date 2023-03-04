@@ -1,20 +1,20 @@
-<h1 align="center">Contact Me</h1>
+<h1 align="center">Contacts</h1>
 
 <h6 align="center"> 
-	Se você quiser visualizar a aplicação, clique <a href="https://contact-me-ls.netlify.app">aqui</a>.
+	If you want to preview the application, click <a href="https://contact-me-ls.netlify.app">here</a>.
 </h6>
 
-<h3 id="sobre">:information_source: Sobre</h3>
+<h3 id="sobre">:information_source: About</h3>
 
-> Este projeto foi desenvolvido para armazenar links pessoais. 
+> This project was developed from base to store personal links. 
 
-A ideia é:
+The idea is:
 
-_"Criar um projeto simples capaz de armazenar links pessoais em um só local facilitando o compartilhamento do mesmo."_
+_"Create a simple project capable of storing personal links in one place making it easy to share."_
 
 --------------------------------------------------------------------------------------
 
-<h3 id="autor">:bust_in_silhouette: Autor</h3>
+<h3 id="autor">:bust_in_silhouette: Author</h3>
 
 <table>
 	<tr>
@@ -30,11 +30,11 @@ _"Criar um projeto simples capaz de armazenar links pessoais em um só local fac
 	</tr>
 </table>
 <br />
-Feito com ❤️ por Lucas Santus!<br />
-Obrigado por visitar e boa codificação!<br />
+Made with ❤️ by Lucas Santus!<br />
+Thanks for visiting and good coding!<br />
 
 --------------------------------------------------------------------------------------
 
 <h3 id="license">:memo: License</h3>
 
-Este projeto está licenciado sob a Licença GNU GENERAL PUBLIC LICENSE - veja o [LICENSE.md](https://github.com/LucasSantus/contact-me/blob/master/LICENSE) para melhores detalhes.
+This project is licensed under the MIT LICENSE - see the [LICENSE.md](https://github.com/LucasSantus/contact-me/blob/master/LICENSE) for better details.
