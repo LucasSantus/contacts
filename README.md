@@ -1,7 +1,7 @@
 <h1 align="center">Contacts</h1>
 
 <h6 align="center"> 
-	If you want to preview the application, click <a href="https://contact-me-ls.netlify.app">here</a>.
+	If you want to preview the application, click <a href="https://contacts-ls.netlify.app/">here</a>.
 </h6>
 
 <h3 id="sobre">:information_source: About</h3>
